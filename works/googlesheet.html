@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-171489514-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-171489514-1');
+</script>
+  <meta charset="utf-8">
+  <title>Rima Rebei</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="/img/favicon.png" rel="icon">
+  <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+        <div class="container py-2 py-md-5">
+          <div class="row align-items-start">
+            <div class="col-md-2">
+              <ul class="custom-menu">
+                  <li ><a href="../index.html">Home</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 d-none d-md-block  mr-auto">
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <strong class="d-block mb-1" style="color: white">Phone</strong>
+                <span style="color: white">+1 857 209 6440</span>
+                <strong class="d-block mb-1" style="color: white">Email</strong>
+                <span style="color: white">rebei@mit.edu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../portfolio.html">Rima Rebei</a>
+      <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+
+
+  <main id="main">
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-11" data-aos="fade-up">
+            <h2>Integrating Google Sheets API to Facilitate Data Transfer</h2>
+            <p>Google Sheet API v4 and Corvid by Wix</p>
+          </div>
+        </div>
+      </div>
+      <div class="site-section pb-0">
+            <div class="container">
+              <div class="row align-items-stretch">
+                <div class="col-md-6" data-aos="fade-up">
+                  <img src="../img/googlesheet/googlesheet.png" alt="Image" class="img-fluid" class="imagenice">
+                  <img src="../img/googlesheet/data.png" alt="Image" class="img-fluid" class="imagenice">
+                  <center><a href="https://rebeir002.wixsite.com/website"><button type="button" class="btn btn-dark">Visit App</button></a></center>
+                </div>
+                <div class="col-md-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+                  <div class="sticky-content">
+                    <h4 class="h3 mb-3">Google Sheet API Corvid App</h4>
+                      <h3 class="h4 mb-3"><span class="text-muted">Summary</span></h3>
+                    <div class="mb-5">
+                      <p>Google APIs is a set of application programming interfaces (APIs) developed by Google which allow communication with Google Services and their integration to other services. The Google Sheets API is pretty powerful and you can utilize it for anything to data collection to  data retrieval. It is even possible to perform calculations on google sheets with specified inputs and displaying the outputs.</p>
+                    </div>
+    
+                    <h4 class="h4 mb-3">App Features</h4>
+                    <ul class="list-unstyled list-line mb-5">
+                      <li>Connect any Google account and Google Sheet with 5 quick steps on the Configuration Page </li>
+                      <li>Input any data directly into a google sheet</li>
+                      <li>Data retrieval from Google sheets is automatic with a page refresh</li>
+                      <li>Able to manipulate data in your Google sheet and automatically display calculations </li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      <div class="site-section pb-0">
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-md-12" data-aos="fade-up">
+<h4>Introduction to the Sheets APIv4</h4>
+<p>The Sheets API allows developers to read, write, and format data in Sheets. The latest version of the Sheets API lets developers programmatically Read and write data
+        format text and numbers, build pivot tables, enforce cell validation, set frozen rows, adjust column sizes, apply formulas, create charts, and more!
+    For a good introduction on the Sheets API capabilities you can watch this intro video by Google that I found helpful!</p><br>
+    <center><iframe width="700" height="415" src="https://www.youtube.com/embed/VLdrgE8iJZI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center><br>
+    <p>For more information on the Google Sheets API visit the site here:</p><a href="https://developers.google.com/sheets/api"><button type="button" class="btn btn-dark">Visit Sheets API Site</button></a><br><br>
+              <p>In particular, for this app I utilized two specific features of the Google Sheets API.</p>
+              <ul class="list-unstyled list-line mb-5">
+                    <li>Reading/writing cell values only (via the spreadsheets.values collection)</li>
+                    <li>Reading/writing any aspect of the spreadsheet (via the spreadsheets collection)</li>
+                  </ul>
+                  <p>In particular, I created my app first by making a simple python command-line application that makes requests to the Google Sheets API. Because Corvid had a built in Node.js server, I had to then go back and work with javascript in the backend and make those changes.</p>
+</div>
+            </div>
+          </div>
+      </div>
+      <div class="site-section pb-0">
+            <div class="container">
+              <div class="row mb-4">
+                <div class="col-md-12" data-aos="fade-up">
+  <h4>Corvid Introduction</h4><br>
+  <h3 class="h4 mb-3"><span class="text-muted">What is Corvid?</span></h3>
+  <p>Corvid by Wix is a serverless, open development platform that lets you build professional web applications in a hassle-free environment. It is basically an accelerated enviroment for development of Web Apps that surpasses Wix's orignal capabilities. 
+      You still work in Wix's visual builder, but you are able to add custom functionality and interactions using Corvid APIs, and enjoy serverless coding in both the front-end and backend.</p><br>
+      <h3 class="h4 mb-3"><span class="text-muted">Corvid Features I Used in this App:</span></h3>
+      <ul class="list-unstyled list-line mb-5">
+            <li><h5>Coding</h5> <br>I was able to add my own JavaScript code to a Wix site and work with the Corvid APIs to add custom functionality and interactions to the app.
+                    Corvid also provides a full server-side runtime system based on Node.js. Node.js is an open source server environment. I exported my functions from the backend to the client-side using Corvid's web modules. </li><br>
+            <li><h5>Databases</h5> <br>When you enable Corvid you also automatically add Wix Data to your site, which lets you work with our built-in databases. I was able to collect all of the Google Sheet data and directly input them in a Wix Collection.
+                    Once you've got databases enabled on your site, you can use Wix's visual builder to connect your data to elements on your site, capture user input, and create dynamic pages. You can also define your own dynamic pages with our custom routers.</li><br>
+        <li><h5>Open platform</h5> <br>Lastly, Corvid lets you extend your site’s functionality to other services. You can install NPM packages, use our fetch to call external APIs, and expose your site's functionality as an API with our http functions. For this project, I downloaded the googleapi package to utilize the Sheets API.</li>
+                </ul>
+
+
+  <div class="container">
+        <div class="row align-items-stretch">
+          <div class="col-md-4" data-aos="fade-up">
+                <div class="sticky-content">
+            <img src="../img/googlesheet/sitestruc.png" alt="Image" class="img-fluid" class="imagenice">
+            </div>
+          </div>
+          <div class="col-md-7 ml-auto" data-aos="fade-up" data-aos-delay="100">
+              <h4 class="h3 mb-3">Site Structure</h4>
+                <h3 class="h4 mb-3"><span class="text-muted">Pages</span></h3>
+              <div class="mb-5">
+                  <p>There are three main pages in this App:</p>
+                    <ul class="list-unstyled list-line mb-5">
+                            <li>Home: Here is the page where you are able to input data to your Google Sheet</li>
+                            <li>Configuration: This is where you set up your Google Account and Google Sheet to work with the App.</li>
+                            <li>Values: This is where the data from your Google Sheet will Appear.</li>
+                          </ul>
+                          <h3 class="h4 mb-3"><span class="text-muted">Backend</span></h3>
+                            <p>Again, there are three main backend JavaScript files in this App:</p>
+                            <ul class="list-unstyled list-line mb-5">
+                                    <li>common-googleSheet: Handles all of the functions to connect to the Google Sheet</li>
+                                    <li>config.jsw: Handles all of the Google Auth 2.0 functions</li>
+                                    <li>googleSheet.jsw: Handles all of the Google Sheet API specific functions</li>
+                                  </ul>
+                                  <h3 class="h4 mb-3"><span class="text-muted">Node_modules</span></h3>
+                                  <p>Installed the Node.js client library for using Google APIs. Support for authorization and authentication with OAuth 2.0, API Keys and JWT tokens is included.</p><br>
+                                  <h3 class="h4 mb-3"><span class="text-muted">Collections</span></h3>
+                                  <p>Created a database for storing the Configuration tokens and Google Sheet data</p>
+              </div>
+
+              
+            
+          </div>
+        </div>
+      </div>
+  </div>
+              </div>
+            </div>
+
+
+
+            <div class="container">
+                    <div class="row mb-4">
+                      <div class="col-md-12" data-aos="fade-up">
+                          <br><br><br>
+        <h4>Google OAuth 2.0: Authorizing my App to Connect to Any Google Account</h4>
+        <p>Google APIs use the OAuth 2.0 protocol for authentication and authorization. </p><br>
+        <h3 class="h4 mb-3"><span class="text-muted">What is OAuth?</span></h3>
+        <p>OAuth doesn’t share password data but instead uses authorization tokens to prove an identity between consumers and service providers. OAuth is an authentication protocol that allows you to approve one application interacting with another on your behalf without giving away your password.</p>
+<p>
+    Google supports common OAuth 2.0 scenarios such as those for web server, installed, and client-side applications.
+        To begin, obtain OAuth 2.0 client credentials from the Google API Console. 
+        Then your client application requests an access token from the Google Authorization Server, 
+        extracts a token from the response, and sends the token to the Google API that you want to access. 
+</p><br><br>
+
+      
+        <div class="container">
+              <div class="row align-items-stretch">
+                <div class="col-md-7" data-aos="fade-up">
+                        <h4>Front End</h4>
+                  <img src="../img/googlesheet/config.png" alt="Image" class="img-fluid" class="imagenice">
+                  
+                </div>
+                <div class="col-md-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+                        <div class="sticky-content">
+                    <h4 class="h3 mb-3">Configuration Screen</h4>
+                    <p>Here is the configuration screen in the app. These </p>
+                    <img src="../img/googlesheet/reset.png" alt="Image" class="img-fluid" class="imagenice">
+                    </div>
+                    </div>
+      
+                    
+                  
+                </div>
+              </div>
+
+
+
+              
+            </div>
+        </div>
+                    </div>
+
+
+                    <div class="container">
+                            <div class="row mb-4">
+                              <div class="col-md-12" data-aos="fade-up">
+                                  <br><br><br>
+                <h4>Utilizing the Sheets API Functions</h4>
+                <p>Here I will be explaining the functions to pull data</p><br>
+
+        </p><br><br>
+              
+                <div class="container">
+                      <div class="row align-items-stretch">
+                        <div class="col-md-7" data-aos="fade-up">
+                              
+                          <img src="../img/googlesheet/insertrowfunc.png" alt="Image" class="img-fluid" class="imagenice">
+                          <br>
+                          
+                        </div>
+                        <div class="col-md-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+                                <div class="sticky-content">
+                            <h4 class="h3 mb-3">Insert Row to Google Sheet Function</h4>
+                            <p>This function allows you to insert data into any google sheet in any cell with the manipulation of a few variables</p>
+                            </div>
+                             </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+        <div class="container">
+                <div class="row align-items-stretch">
+                  <div class="col-md-7" data-aos="fade-up">
+                        
+                    <img src="../img/googlesheet/readfunc.png" alt="Image" class="img-fluid" class="imagenice">
+                    <br>
+                    
+                  </div>
+                  <div class="col-md-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+                          <div class="sticky-content">
+                      <h4 class="h3 mb-3">Read Values from Google Sheet Function</h4>
+                      <p>This function allows you to pull data from any google sheet in any set of cell ranges.</p><br>
+                     <center> <img src="../img/googlesheet/insertfunc.png" alt="Image" width="250px" class="img-fluid" class="imagenice"></center>
+                      </div>
+                      </div>
+        
+                      
+                    
+                  </div>
+                </div>
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row justify-content-center text-center mb-4">
+            <div class="col-5">
+              <h3 class="h3 heading">Similar Projects</h3>
+              <p>Click below to explore more of my projects!</p>
+            </div>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="200">
+            <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+                    <a href="works/mitvr.html" class="item-wrap fancybox">
+                        <div class="work-info">
+                          <h3>MITVR</h3>
+                          <span>Virtual Reality Tour of MIT</span>
+                        </div>
+                        <img class="img-fluid" src="../img/mitvr.png">
+                      </a>
+                    </div>
+            <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="../works/nightstand.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>DIY Nightstand</h3>
+                  <span>Computer Automated Machining</span>
+                </div>
+                <img class="img-fluid" src="../img/table.png">
+              </a>
+            </div>
+            <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="../works/gripper.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Autonomous Pneumatic Gripper</h3>
+                  <span>Soft Robotics</span>
+                </div>
+                <img class="img-fluid" src="../img/gripper.jpg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  </main>
+  
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">Rima Rebei</p>
+          <div class="credits">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../vendor/easing/easing.min.js"></script>
+  <script src="../vendor/php-email-form/validate.js"></script>
+  <script src="../vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="../vendor/aos/aos.js"></script>
+  <script src="../vendor/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

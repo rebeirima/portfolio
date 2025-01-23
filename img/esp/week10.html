@@ -1,0 +1,65 @@
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+<link rel="stylesheet" href="styles10.css">
+        <div class="header">
+                        <a href="../index.html" class="logo"><img src="titleHTMA.png" width="250px"></a>
+                            <div class="header-right">
+                                <a href="../about/about.html">About Me</a>
+                                <a href="../final/final.html">Final Project</a>
+                                <a href="#about">Electronics</a>
+                                <a class="active" href="#about">Mechanics</a>
+                                <a href="#home">CBA Site</a>
+                            </div>
+        </div>
+
+<body>
+<link rel="stylesheet" href="styles10.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+<br>
+<div class="row">
+<div class="column">
+<div class="card1">
+    <h2><center>10</center></h2>
+    <h1><center>Networking and Communication </center></h1>
+    <center><h3>ESP32 Wroom</h3></center>
+<br>
+<h3>What is the ESP32 Wroom?</h3>
+<p>The ESP-WROOM-32 is a powerful, generic WiFi-BT-BLE MCU module that targets a wide variety of applications ranging from low-power sensor networks to 
+    the most demanding tasks such as voice encoding, music streaming and MP3 decoding.</p>
+<h3>Creating the board in Eagle</h3>
+<p>Before creating the board in eagle, I read the datasheet for the ESP-WROOM-32 to help me understand the layout of the module better. I also drew out the circuit to make the Eagle process easier and faster.</p>
+<center><img src="espipad.jpg" alt="pcb" style="width:600px;" class="imagenice"></center><br>
+<center><img src="espsch.png" alt="pcb" style="width:600px;" class="imagenice"></center><br>
+<center><img src="board.png" alt="pcb" style="width:400px;" class="imagenice"></center><br>
+
+<h3>Making the Board Using the Other Mill</h3>
+<center><img src="IMG_1879.jpeg" alt="pcb" style="width:400px;" class="imagenice"></center><br>
+<center><img src="IMG_1881.jpeg" alt="pcb" style="width:400px;" class="imagenice"></center><br>
+<center><img src="IMG_2344.jpeg" alt="pcb" style="width:400px;" class="imagenice"></center><br>
+
+<h2>Programming the Board</h2>
+<p>I had issues when programming my board. The first problem was when I first ran Neils code to make sure my board was working with working code, my chip could not even be connected.
+    To make sure it wasn't a hardware problem, I checked my Eagle schematic to make sure every that needed to be connected is connected. I realised I didn't connect ground to one of the resistors so I added a wire to connect it to where it
+    needed to go. After I did that, I ran the code again and this time it was able to find me board but it would always tell me the error "Brownout detector was triggered". After asking Anthony's help, Anthony wasn't able to find anything wrong with my
+    board and concluded there must be a problem with the ESP-32 chip that I had. However, since there weren't anymore chips available and Anthony didn't order anymore, I wasn't able to replace the chip on my board
+    and get a working board.
+</p>
+<center><img src="IMG_2715.jpeg" alt="pcb" style="width:400px;" class="imagenice"></center><br>
+<center><img src="esp.png" alt="pcb" style="width:800px;" class="imagenice"></center><br>
+</div>
+</div>
+</div>
+
+
+<br><br>
+</body>
+<footer class="footer">
+        <div class="footer-text" style="text-align: center">
+                <h4>How to Make Almost Anything | Fall 2019</h4>
+                <h5> Website hand coded by Rima Rebei</h5><br>
+        </div>
+</footer>
+
+</html>

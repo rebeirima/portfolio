@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rima Rebei</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="/img/favicon.png" rel="icon">
+  <link href="/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Raleway:400,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../vendor/line-awesome/css/line-awesome.min.css" rel="stylesheet">
+  <link href="../vendor/aos/aos.css" rel="stylesheet">
+  <link href="../vendor/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../css/style.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
+        <div class="container py-2 py-md-5">
+          <div class="row align-items-start">
+            <div class="col-md-2">
+              <ul class="custom-menu">
+                  <li ><a href="../index.html">Home</a></li>
+                <li><a href="../portfolio.html">Portfolio</a></li>
+                <li><a href="../about.html">About Me</a></li>
+                <li><a href="../resume.html">Resume</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 d-none d-md-block  mr-auto">
+            </div>
+            <div class="col-md-4 d-none d-md-block">
+                <strong class="d-block mb-1" style="color: white">Phone</strong>
+                <span style="color: white">+1 857 209 6440</span>
+                <strong class="d-block mb-1" style="color: white">Email</strong>
+                <span style="color: white">rebei@mit.edu</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <nav class="navbar navbar-light custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="../portfolio.html">Rima Rebei</a>
+      <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+    </div>
+  </nav>
+
+
+
+  <main id="main">
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-4 align-items-center">
+          <div class="col-md-11" data-aos="fade-up">
+            <h2>Building an Intelligent Quadcopter with Object Recognition 
+                </h2>
+            <p>Ongoing Personal Project for Spring 2020 Semester</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-section pb-0">
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-md-12" data-aos="fade-up">
+<h4>Quadcopter Breakdown</h4>
+<p>
+        <ol>
+                <li>Frame: there are two possibilities when it comes to a frame for your drone. You can make it yourself or buy it in an online store, and for a wide choice of high-quality frames, we suggest checking out our article about best drone frames. If you decide to build it yourself, the project is not that difficult, but you’ll need some engineering knowledge and knowledge of the materials you are going to use. For instance, you can use metal (something light), plastic, or even wood slats. If you opt for a wooden frame, you’ll need a wood board which is about 2.5 cm thick.
+                    </li><br>
+                <li>Motors: Because I want to make a Quadcopters, I  will be needing 4 motors in total. The recommendation is to use brushless motors – they are lighter on the battery. </li>
+               <br> <li>ESCs or electronic speed control: these are also essential pieces of your drone as they are in charge of delivering power to the motors. Again, their number depends on the number of arms your drone is going to have. </li>
+            <br> <li>Propellers: When looking for the propellers, you must find the ones that match the frame of your drone. Pay attention to materials – you won’t find wooden propellers, but you must make sure the ones you choose are a good fit.</li>
+           <br> <li>Connectors: Connect the motors and ESCs, as well as 4.5 mm connectors for the power distribution board.</li>
+          <br>  <li>The power distribution board – this board connects the electronic speed controls to the battery.</li>
+         <br>  <li>Batteries: When purchasing the batteries for your drone, you need to consider the capacity of a battery and its type. The most used batteries for this purpose are Li-Po batteries and their power differs. </li>
+     <br>   <li>Battery monitor: This is not an elementary item, but the monitor is quite useful in warning you when the batteries are close to finishing. This way you don’t risk having the drone remain out of juice in the air, over a pond. A battery monitor ensures that your aerial vehicle won’t die in the most inopportune place.</li>
+  <br>     <li>Mounting pad: It reduces the vibrations, and thus improves the flight. This one is very useful especially if you are trying to take pictures or videos with your DIY drone.</li>
+   <br> <li>Flight Controller: This device shares the power and commands the motors at the same time.
+        </li>
+    <br><li>RC receiver and transmitter (controller)</li>
+  <br>  <li>RasberryPi Zero and Camera: to do facial recognition.If you want to take aerial photos and record the surroundings while flying your drone, you will need a camera. The best cameras are those that can take the quality 4K videos, but everyone will find one according to their needs. For high-quality aerial photography and videography, you might also need a gimbal for the camera.USB key:This is necessary to save the photos and videos. </li>
+    </ol>
+
+</p><br><br>
+<h4>Brushless Motor Driver with PWM Control</h4>
+<center><iframe src="https://player.vimeo.com/video/380795624" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></center><br>
+<p>I was interested in building a drone in the future and Anthony gave me a drone that was just sitting around in his office. </p>
+<center><img src="../img/motordriver/drone.JPG" alt="pcb" style="width:600px;" class="imagenice"></center><br>
+<p>I took it apart and wanted to create a motor board to see if I could control the motors. It was a SYMA drone and was able to find the motors that was used to see what voltage and current it needs to know what regulator to add onto the board.<br>
+        Operating Voltage: 3.7v at 500mAh<br>
+        Dimensions: 7 x 20 mm (D x L)  </p>
+
+<center><img src="../img/motordriver/motor.JPG" alt="pcb" style="width:300px;" class="imagenice"></center><br>
+<h2>Creating the Board in Eagle</h2>
+<center><img src="../img/motordriver/resch.png" alt="pcb" style="width:600px;" class="imagenice"></center><br>
+<center><img src="../img/motordriver/sch.png" alt="pcb" style="width:400px;" class="imagenice"></center><br>
+
+<h2>Final Board</h2>
+<center><img src="../img/motordriver/IMG_2346.jpeg" alt="pcb" style="width:400px;" class="imagenice"></center><br>
+<p>I soldered the pins of the motor to another wire that had a female header so I could plug it in the board that I made.</p>
+<center><img src="../img/motordriver/IMG_2348.jpeg" alt="pcb" style="width:230px;" class="imagenice"> <img src="../img/motordriver/IMG_2349.jpeg" alt="pcb" style="width:300px;" class="imagenice"></center><br>
+
+<h3>Programming my Board</h3>
+<p>This board was the first board that I created that has an external power source, so that power isn't just coming from ftdi port. Before programming my board, I wanted to make sure that my motor was working to help move along the debugging process. I connectecd both sides to a DC power supply and the motor turned!</p>
+<center><img src="../img/motordriver/IMG_2351.jpeg" alt="pcb" style="width:300px;" class="imagenice"></center><br>
+<h3>What is PWM?</h3>
+<p>Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means. Digital control is used to create a square wave, a signal switched 
+    between on and off. This on-off pattern can simulate voltages in between full on (5 Volts) and off (0 Volts) by changing the portion of the time the signal spends on versus the time that the signal spends off. The duration of "on time" is called the 
+    pulse width. To get varying analog values, you change, or modulate, that pulse width.
+    Pulse-width modulation (PWM) of a signal or power source involves the modulation of its duty cycle, to either convey information over a communications channel or control the amount of 
+    power sent to a load.The simplest way to generate a PWM signal is the intersective method, which requires only a sawtooth or a triangle waveform (easily generated using a simple 
+    oscillator) and a comparator. When the value of the reference signal (the green sine wave in figure 2) is more than the modulation waveform (blue), the PWM signal (magenta) is in the high state, otherwise it is in the low state.</p>
+<h4>Using PWM to control a motor</h4>
+<p>PWM can be used to reduce the total amount of power delivered to a load without losses normally incurred when a power source is limited by resistive means. This is because the average power delivered is proportional to the modulation duty cycle. After understanding what PWM does, I was able to understand Neils code and use it on my board to get the motor running.</p>
+<center><img src="../img/motordriver/motor.png" alt="pcb" style="width:800px;" class="imagenice"></center><br>
+<center><img src="../img/motordriver/IMG_2353.jpeg" alt="pcb" style="width:600px;" class="imagenice"></center><br>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="site-section pb-0">
+        <div class="container">
+          <div class="row justify-content-center text-center mb-4">
+            <div class="col-5">
+              <h3 class="h3 heading">Similar Projects</h3>
+              <p>Click below to explore more of my projects!</p>
+            </div>
+          </div>
+
+          <div class="row" data-aos="fade-up" data-aos-delay="200">
+            <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="../works/3dprint.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Succulent Holder CAD</h3>
+                  <span>3D Printing</span>
+                </div>
+                <img class="img-fluid" src="../img/castle.png">
+              </a>
+            </div>
+            <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="../works/nightstand.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>DIY Nightstand</h3>
+                  <span>Computer Automated Machining</span>
+                </div>
+                <img class="img-fluid" src="../img/table.png">
+              </a>
+            </div>
+            <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
+              <a href="../works/gripper.html" class="item-wrap fancybox">
+                <div class="work-info">
+                  <h3>Autonomous Pneumatic Gripper</h3>
+                  <span>Soft Robotics</span>
+                </div>
+                <img class="img-fluid" src="../img/gripper.jpg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  </main>
+  
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="mb-1">Rima Rebei</p>
+          <div class="credits">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/jquery/jquery-migrate.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../vendor/easing/easing.min.js"></script>
+  <script src="../vendor/php-email-form/validate.js"></script>
+  <script src="../vendor/isotope/isotope.pkgd.min.js"></script>
+  <script src="../vendor/aos/aos.js"></script>
+  <script src="../vendor/owlcarousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+<link rel="stylesheet" href="styles6.css">
+        <div class="header">
+            <a href="../index.html" class="logo"><img src="titleHTMA.png" width="250px"></a>
+            <div class="header-right">
+                <a href="../about/about.html">About Me</a>
+                <a href="../final/final.html">Final Project</a>
+                <a href="#about">Electronics</a>
+                <a class="active" href="#about">Mechanics</a>
+                <a href="#home">CBA Site</a>
+            </div>
+        </div>
+
+<body>
+<link rel="stylesheet" href="styles6.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+<br>
+<div class="row">
+<div class="column">
+<div class="card1">
+    <h2><center>06</center></h2>
+    <h1><center>Embedded Programming</center></h1>
+    <center><h4>Programing Hello Echo World Board</h4></center>
+    <br>
+    <p>For this week we first had to program our board from week 5 and read a microcontroller datasheet. However, I first wanted to really understand what a microcontroller is in the first place. 
+    </p>
+    <h2>What is a Microcontroller?</h2>
+    <p >
+        A microcontroller (sometimes called an MCU) at its core is just a computer. Basically, the computer that you are using right now to read my website can run thousands of programs. Microcontrollers 
+        on the other hand do one thing well. Microcontrollers have several characteristics:<br><br>
+        - They are dedicated to one task a run a specific program. This program is stored in ROM and generally does not change. <br>
+        - They are low power devices <br>
+        - They have a dedicated input and output device. <br>
+    </p>
+    <h2>What Makes up a microcontroller?</h2>
+    <p > All microcontrollers have these components:
+    </p>
+    <h4>CPU (Central Processing Unit)</h4>
+    <p >This is sometimes called a processor or microprocessor, executes programs and is basically the brains of the system. This CPU is loading the program from somewhere. </p>
+    <h4>RAM (Random-Access Memory)</h4>
+    <p >This is where the microcontroller can store variables.</p>
+    <h4>I/O ports (Input/ Output Ports)</h4>
+    <p >This is so the microcontroller can talk to people. And in many cases, microcontrolles have the Electrical Erasable Programmable Read-Only Memory (EEPROM)
+        </p>
+
+
+    <h2>Programming my Board</h2>
+    <p >This week we have to program our board that we created in week 4 to do something. My board's input is a button and output is an LED. Because I have no experience, my goal for this week is to program my board 
+        so if I press the button the LED with turn on and if I don't press it, my LED will stay off. First, I decided to remake my board from week 2 because I messed up the solderning and decided it would be benificial for me to get the practice of making more boards.</p>
+    <center><img src="production.png" alt="pcb" style="width:400px;" class="imagenice"><br></center>
+    <p >The first thing that I wanted to do when writing my code was determine what pins to assign my LED and button on my board. I looked at my eagle schematic and saw that my LED was connected to pin PA7 and my button is connect to pin PA2 on my Attiny45.</p>
+    <center><img src="pinout.png" alt="pcb" style="width:700px;" class="imagenice"><br></center>
+    <p>Then, I looked up an Attiny45 to Arduino pinout diagram to find the corresponding arduino pins for my button and LED to put in my arduino code. Luckily, it was easy this time and PA7 and PA2 corresponded to 7 and 2 accordingly. </p> <br>
+    <center><img src="ATtiny-Pinouts-14.jpg" alt="pcb" style="width:700px;" class="imagenice"><br><br></center>
+    <p >My next step was starting on my code. I decided to use the arduino language, a set of C/C++ functions, to make my LED light up by the touch of a button. In the set up, I declared my LED as an output pin and my button as an input pin. The loop required 
+        a simple if statement that said if the input value from the button is high (button is not pressed), then the LED will have no current flowing through it and will be off. Otherwise, the LED will be on.  </p><br>
+    <center><img src="ledpush.png" alt="pcb" style="width:700px;" class="imagenice"><br></center>
+    <p>Unfortunatly, I have a mac and I havn't been able to figure out how to program by board by using my laptop yet. So I went on the Linux computer in the EECS lab and connected my board and my programmer to the computer using a ftdi and usb cable accordingly. The Attiny45 libraries were already downloaded and imported into the Arduino in the computer
+    so all I had to do after that was hit upload and the button turned on the LED when I pressed it!</p><br>
+    <center><video controls="ledvideo" width="300" name="Video Name" src="ledvideo2.mp4" class="imagenice"></video><br></center><br>
+    <center><img src="ledpush.png" alt="pcb" style="width:700px;" class="imagenice"><br></center><br>
+    <h3>Software Serial</h3>
+    <p>I also wanted to program my board to interact with the serial monitor. I wanted to program my board so that when you go into the serial monitor and type 1 the led on pin 7 will light up then when you type 0 the led will be off. I first tried coding it by just using Serial from arduino, however I quickly realized that this wouldn't work with the board that I created.</p>
+    <center><img src="serialled.png" alt="pcb" style="width:800px;" class="imagenice"></center><br>
+  <h4>What is Software Serial?</h4>
+    <p>In order to program my board to do what I wanted I have to use Software Serial.
+            The Arduino hardware has built-in support for serial communication on pins 0 and 1 (which also goes to the computer via the USB connection). The SoftwareSerial library has been developed to allow serial communication on other digital pins of the Arduino, using software to replicate the functionality (hence the name "SoftwareSerial"). It is possible to have multiple software serial ports with speeds up to 115200 bps. A parameter enables inverted signaling for devices which require that protocol.
+        There are a few limitations to software serial that would be relevent to future projects. For example, if using multiple software serial ports, only one can receive data at a time.
+    In this case it is ok because I only want one output (LED), but that would be an important thing to keep in mind.</p>
+<h4>Final working Software Serial Code</h4>
+<center><img src="serialled2.png" alt="pcb" style="width:750px;" class="imagenice"></center><br>
+
+    </div>
+</div>
+</div>
+
+
+<br><br>
+</body>
+<footer class="footer">
+        <div class="footer-text" style="text-align: center">
+                <h4>How to Make Almost Anything | Fall 2019</h4>
+                <h5> Website hand coded by Rima Rebei</h5><br>
+        </div>
+</footer>
+
+</html>

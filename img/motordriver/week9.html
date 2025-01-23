@@ -1,0 +1,77 @@
+<html>
+
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+<link rel="stylesheet" href="styles9.css">
+        <div class="header">
+                        <a href="../index.html" class="logo"><img src="titleHTMA.png" width="250px"></a>
+                            <div class="header-right">
+                                <a href="../about/about.html">About Me</a>
+                                <a href="../final/final.html">Final Project</a>
+                                <a href="#about">Electronics</a>
+                                <a class="active" href="#about">Mechanics</a>
+                                <a href="#home">CBA Site</a>
+                            </div>
+        </div>
+
+<body>
+<link rel="stylesheet" href="styles9.css">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i%7cWork+Sans:400,500,700" rel="stylesheet" type="text/css">
+<br>
+<div class="row">
+<div class="column">
+<div class="card1">
+    <h2><center>09</center></h2>
+    <h1><center>Output Devices</center></h1>
+    <center><h2>Motor Driver</h2></center>
+    <center><h4>10/24/2019-10/30/2019</h4></center>
+<br>
+<center><iframe src="https://player.vimeo.com/video/380795624" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></center><br>
+<p>I was interested in building a drone in the future and Anthony gave me a drone that was just sitting around in his office. </p>
+<center><img src="drone.JPG" alt="pcb" style="width:600px;" class="imagenice"></center><br>
+<p>I took it apart and wanted to create a motor board to see if I could control the motors. It was a SYMA drone and was able to find the motors that was used to see what voltage and current it needs to know what regulator to add onto the board.<br>
+        Operating Voltage: 3.7v at 500mAh<br>
+        Dimensions: 7 x 20 mm (D x L)  </p>
+
+<center><img src="motor.JPG" alt="pcb" style="width:300px;" class="imagenice"></center><br>
+<h2>Creating the Board in Eagle</h2>
+<center><img src="resch.png" alt="pcb" style="width:600px;" class="imagenice"></center><br>
+<center><img src="sch.png" alt="pcb" style="width:400px;" class="imagenice"></center><br>
+
+<h2>Final Board</h2>
+<center><img src="IMG_2346.jpeg" alt="pcb" style="width:400px;" class="imagenice"></center><br>
+<p>I soldered the pins of the motor to another wire that had a female header so I could plug it in the board that I made.</p>
+<center><img src="IMG_2348.jpeg" alt="pcb" style="width:230px;" class="imagenice"> <img src="IMG_2349.jpeg" alt="pcb" style="width:300px;" class="imagenice"></center><br>
+
+<h3>Programming my Board</h3>
+<p>This board was the first board that I created that has an external power source, so that power isn't just coming from ftdi port. Before programming my board, I wanted to make sure that my motor was working to help move along the debugging process. I connectecd both sides to a DC power supply and the motor turned!</p>
+<center><img src="IMG_2351.jpeg" alt="pcb" style="width:300px;" class="imagenice"></center><br>
+<h3>What is PWM?</h3>
+<p>Pulse Width Modulation, or PWM, is a technique for getting analog results with digital means. Digital control is used to create a square wave, a signal switched 
+    between on and off. This on-off pattern can simulate voltages in between full on (5 Volts) and off (0 Volts) by changing the portion of the time the signal spends on versus the time that the signal spends off. The duration of "on time" is called the 
+    pulse width. To get varying analog values, you change, or modulate, that pulse width.
+    Pulse-width modulation (PWM) of a signal or power source involves the modulation of its duty cycle, to either convey information over a communications channel or control the amount of 
+    power sent to a load.The simplest way to generate a PWM signal is the intersective method, which requires only a sawtooth or a triangle waveform (easily generated using a simple 
+    oscillator) and a comparator. When the value of the reference signal (the green sine wave in figure 2) is more than the modulation waveform (blue), the PWM signal (magenta) is in the high state, otherwise it is in the low state.</p>
+<h4>Using PWM to control a motor</h4>
+<p>PWM can be used to reduce the total amount of power delivered to a load without losses normally incurred when a power source is limited by resistive means. This is because the average power delivered is proportional to the modulation duty cycle. After understanding what PWM does, I was able to understand Neils code and use it on my board to get the motor running.</p>
+<center><img src="motor.png" alt="pcb" style="width:800px;" class="imagenice"></center><br>
+<center><img src="IMG_2353.jpeg" alt="pcb" style="width:600px;" class="imagenice"></center><br>
+
+
+
+</div>
+</div>
+</div>
+
+
+<br><br>
+</body>
+<footer class="footer">
+        <div class="footer-text" style="text-align: center">
+                <h4>How to Make Almost Anything | Fall 2019</h4>
+                <h5> Website hand coded by Rima Rebei</h5><br>
+        </div>
+</footer>
+
+</html>
